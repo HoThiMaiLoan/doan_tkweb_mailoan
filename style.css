@@ -1,0 +1,1404 @@
+@font-face {
+    font-family: 'DM Sans';
+    src: url('./css/fonts/DMSans-Bold.woff2') format('woff2'),
+        url('./css/fonts/DMSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    src: url('./css/fonts/DMSans-BoldItalic.woff2') format('woff2'),
+        url('./css/fonts/DMSans-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    src: url('./css/fonts/DMSans-Italic.woff2') format('woff2'),
+        url('./css/fonts/DMSans-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    src: url('./css/fonts/DMSans-Medium.woff2') format('woff2'),
+        url('./css/fonts/DMSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    src: url('./css/fonts/DMSans-MediumItalic.woff2') format('woff2'),
+        url('./css/fonts/DMSans-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    src: url('./css/fonts/DMSans-Regular.woff2') format('woff2'),
+        url('./css/fonts/DMSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('./css/fonts/Outfit-Bold.woff2') format('woff2'),
+        url('./css/fonts/Outfit-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('./css/fonts/Outfit-Black.woff2') format('woff2'),
+        url('./css/fonts/Outfit-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('./css/fonts/Outfit-ExtraBold.woff2') format('woff2'),
+        url('./css/fonts/Outfit-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('./css/fonts/Outfit-ExtraLight.woff2') format('woff2'),
+        url('./css/fonts/Outfit-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('./css/fonts/Outfit-Light.woff2') format('woff2'),
+        url('./css/fonts/Outfit-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('./css/fonts/Outfit-Medium.woff2') format('woff2'),
+        url('./css/fonts/Outfit-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('./css/fonts/Outfit-Regular.woff2') format('woff2'),
+        url('./css/fonts/Outfit-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('./css/fonts/Outfit-Thin.woff2') format('woff2'),
+        url('./css/fonts/Outfit-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('./css/fonts/Outfit-SemiBold.woff2') format('woff2'),
+        url('./css/fonts/Outfit-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+#form-container{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    width: 100vw;
+    background-color: #E5E5E5;
+}
+.form-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1920px;
+    height: 4532px;
+}
+#header{
+    background-image: url(./ảnh/BG1.png);
+    display: flex;
+    position: absolute;
+    width: 1920px;
+    height: 500px;
+    top: 0px;
+}
+.top-header{
+    font-weight: 500;
+    font-size: 15px;
+    padding-top: 16px;
+    
+}
+.top-header .container{
+    display: flex;
+    position: absolute;
+    width: 1170px;
+    height: 48px;
+    left: 375px;
+    right: 375px;
+    margin: auto;
+    justify-content: space-between;
+}
+.top-header .container .logo{
+    position: absolute;
+    width: 176px;
+    height: 44px;
+    left: 0;
+}
+.top-header .container .logo img{
+    position: absolute;
+    width: 32px;
+    height: 44px;
+    left: 0;
+    top: 18px;
+}
+.top-header .container .logo p{
+    display: flex;
+    position: absolute;
+    width: 134px;
+    height: 34px;
+    left: 42px;
+    top: 5px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-size: 24px;
+}
+.top-header .container .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0px;
+    gap: 30px;
+    position: absolute;
+    width: 470px;
+    height: 24px;
+    left: 353px;
+    top: 18px;
+}
+.top-header .container .navbar ul{
+    display: flex;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    color: #7B88A8;
+    gap: 30px;
+}
+.top-header .container .navbar ul li{
+    cursor: pointer;
+    display: flex;
+}
+.top-header .container .navbar ul li span{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: 215px;
+    top: 5px;
+    background: #34C635;
+    border-radius: 50%;
+}
+.top-header .container .navbar #menu{
+    display: none;
+}
+.top-header .container .navbar label{
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    .top-header .container .navbar label{
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+    } 
+    .top-header .container .navbar ul{
+        display: none;
+    }  
+    .top-header{
+        position: relative;
+    } 
+    .top-header .navbar input#menu:checked ~ ul{
+        display: flex;
+        padding: 2rem;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        margin: 0;
+        top: 30px;
+        left: 0;
+        width: 100%;
+        height: 24px;
+        background-color: #e2ecf3;
+        text-align: center;
+        cursor: pointer;
+    }
+    .top-header .container .navbar ul li span{
+        display: none;
+    }
+    .top-header .navbar input#menu:checked ~ label>.ti-menu::before{
+        content: "\e646";
+    }
+}
+.top-header .icons{
+    display: flex;
+    position: absolute;
+    left: 946px;
+    top: 37px;
+    width: 24px;
+    height: 24px;
+    gap: 25px;
+}
+.top-header .icons a{
+    color: #7B88A8;
+    text-decoration: none;
+    position: relative;
+}
+.top-header .icons a span{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    font-size: 0.2px;
+    background-color: red;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    display: flex;
+}
+.top-header .button{
+    display: flex;
+    text-transform: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 13px 24px;
+    gap: 10px;
+    position: absolute;
+    width: 129px;
+    height: 48px;
+    left: 1041px;
+    top: 16px;
+    background: #4F77FF;
+    border-radius: 5px;
+}
+.top-header .button button{
+    width: 52px;
+    height: 24px;
+    display: contents;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -0.3px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.top-header .title{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    position: absolute;
+    width: 870px;
+    height: 94px;
+    left: 525px;
+    top: 203px;
+}
+.top-header .title h1{
+    width: 870px;
+    height: 46px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    letter-spacing: -2px;
+    color: #2D3958;
+    margin: 0;
+}
+.top-header .title span{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    top: 70px;
+    width: 870px;
+    height: 18px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -0.3px;
+    text-transform: uppercase;
+}
+.top-header .title p{
+    margin: 0;
+}
+.form{
+    display: flex;
+    position: absolute;
+    width: 1920px;
+    height: 2306px;
+    background-color: #fff;
+    top: 500px;
+}
+#contents{
+    display: flex;
+    position: absolute;
+    top: 120px;
+    left: 285px;
+    width: 1350px;
+    height: 2066px;
+    justify-content: center;
+}
+#contents .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1170px;
+    height: 2066px;
+}
+.container h2{
+    width: 1170px;
+    height: 56px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    letter-spacing: -2px;
+    color: #2D3958;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.container .dong{
+    position: absolute;
+    width: 1170px;
+    height: 570px;
+    top: 176px;
+    display: flex;
+    justify-content: center;
+}
+.container .dong .items1{
+    position: absolute;
+    left: 0;
+    top: 0; 
+    width: 470px;
+    height: 445px;
+}
+.container .dong .items1 h3{
+    position: absolute;
+    width: 470px;
+    height: 81px;
+    left: 0px;
+    top: 50px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 46px;
+    letter-spacing: -1px;
+    color: #2D3958;
+    margin: 0;
+}
+.container .dong .items1 p{
+    position: absolute;
+    width: 470px;
+    height: 188px;
+    left: 0px;
+    top: 181px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.3px;
+    color: #788190;
+    margin: 0;
+}
+.container .dong .items1 .button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    width: 166px;
+    height: 55.94px;
+    top: 410px;
+    background: #4F77FF;
+    border-radius: 5px;
+}
+.container .dong .items1 .button button{
+    display: contents;
+    width: 102px;
+    height: 24px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -0.3px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.container .dong .anh1 img{
+    position: absolute;
+    width: 570px;
+    height: 570px;
+    right: 0;
+    top: 0; 
+}
+.container .dong2{
+    position: absolute;
+    width: 1170px;
+    height: 570px;
+    top: 800px;
+    display: flex;
+    justify-content: center;
+}
+.container .dong2 .anh2 img{
+    position: absolute;
+    width: 570px;
+    height: 570px;
+    left: 0;
+    top: 50px; 
+}
+.container .dong2 .items2{
+    top: 0;
+    position: absolute;
+    right: 0;
+    width: 470px;
+    height: 445px;
+}
+.container .dong2 .items2 h3{
+    position: absolute;
+    width: 470px;
+    height: 82px;
+    right: 0px;
+    top: 50px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 46px;
+    letter-spacing: -1px;
+    color: #2D3958;
+}
+.container .dong2 .items2 p{
+    position: absolute;
+    width: 470px;
+    height: 187px;
+    right: 0px;
+    top: 181px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.3px;
+    color: #788190;
+}
+.container .dong2 .items2 .button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    width: 174px;
+    height: 55.94px;
+    left: 0.23px;
+    top: 439px;
+    background: #4F77FF;
+    border-radius: 5px;
+}
+.container .dong2 .items2 .button button{
+    display: contents;
+    width: 110px;
+    height: 24px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -0.3px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.container .dong3{
+    width: 1170px;
+    height: 570px;
+    top: 1500px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
+.container .dong3 .items3{
+    position: absolute;
+    left: 0;
+    top: 0; 
+    width: 470px;
+    height: 445px;
+}
+.container .dong3 .items3 h3{
+    position: absolute;
+    width: 470px;
+    height: 81px;
+    left: 0px;
+    top: 50px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 46px;
+    letter-spacing: -1px;
+    color: #2D3958;
+}
+.container .dong3 .items3 p{
+    position: absolute;
+    width: 470px;
+    height: 188px;
+    left: 0px;
+    top: 181px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.3px;
+    color: #788190;
+}
+.container .dong3 .items3 .button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    width: 166px;
+    height: 55.94px;
+    left: 0.23px;
+    top: 439px;
+    background: #4F77FF;
+    border-radius: 5px;
+}
+.container .dong3 .items3 .button button{
+    display: contents;
+    width: 102px;
+    height: 24px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -0.3px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.container .dong3 .anh3 img{
+    position: absolute;
+    width: 570px;
+    height: 570px;
+    right: 0;
+    top: 0; 
+}
+#banner{
+    background-image: url(./ảnh/BG2.png);
+    position: absolute;
+    width: 1920px;
+    height: 340px;
+    top: 2806px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.items{
+    display: flex;
+    position: absolute;
+    width: 1170px;
+    height: 200px;
+    left: 375px;
+    top: 99px;
+    align-items: center;
+    gap: 30px;
+}
+.items .item1{
+    display: flex;
+    justify-content: center;
+    width: 370px;
+    height: 200px;
+}
+.items .item1 h2{
+    position: absolute;
+    width: 270px;
+    height: 60px;
+    top: 0;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 72px;
+    text-align: center;
+    letter-spacing: -2px;
+    color: #886CFF;
+    margin-top: 0;
+}
+.items .item1 h3{
+    position: absolute;
+    width: 270px;
+    height: 24px;
+    top: 50px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: -1px;
+    color: #FFFFFF;
+}
+.items .item1 p{
+    position: absolute;
+    width: 370px;
+    height: 56px;
+    bottom: 0%;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: #7B88A8;
+    letter-spacing: -0.3px;
+}
+.items .item2{
+    display: flex;
+    justify-content: center;
+    width: 370px;
+    height: 200px;
+}
+.items .item2 h2{
+    position: absolute;
+    width: 270px;
+    height: 60px;
+    top: 0;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 72px;
+    text-align: center;
+    letter-spacing: -2px;
+    color: #886CFF;
+    margin-top: 0;
+}
+.items .item2 h3{
+    position: absolute;
+    width: 270px;
+    height: 24px;
+    top: 50px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: -1px;
+    color: #FFFFFF;
+}
+.items .item2 p{
+    position: absolute;
+    width: 370px;
+    height: 56px;
+    bottom: 0%;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: #7B88A8;
+    letter-spacing: -0.3px;
+}
+.items .item3{
+    display: flex;
+    width: 370px;
+    height: 200px;
+    justify-content: center;
+}
+.items .item3 h2{
+    position: absolute;
+    width: 270px;
+    height: 60px;
+    top: 0;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 72px;
+    text-align: center;
+    letter-spacing: -2px;
+    color: #886CFF;
+    margin-top: 0;
+}
+.items .item3 h3{
+    position: absolute;
+    width: 270px;
+    height: 24px;
+    top: 50px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: -1px;
+    color: #FFFFFF;
+}
+.items .item3 p{
+    display: flex;
+    position: absolute;
+    width: 370px;
+    height: 56px;
+    bottom: 0%;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: #7B88A8;
+    letter-spacing: -0.3px;
+}
+#contents2{
+    position: absolute;
+    top: 3149px;
+    width: 1920px;
+    height: 781px;
+    background-color: #F8FAFC;
+}
+#contents2 .container{
+    display: flex;
+    position: absolute;
+    width: 1920px;
+    height: 781px;
+}
+.container .title1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    position: absolute;
+    width: 870px;
+    height: 111px;
+    left: 525px;
+    top: 120px;
+}
+.container .title1 h2{
+    width: 870px;
+    height: 56px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    letter-spacing: -2px;
+    color: #2D3958;
+    margin: auto;
+}
+.container .title1 p{
+    width: 870px;
+    height: 25px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    text-align: center;
+    color: #7B88A8;
+    margin: auto
+}
+.container .cards{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    padding: 0px;
+    gap: 30px;
+    width: 1170px;
+    height: 350px;
+    left: 375px;
+    top: 311px;
+}
+.container .cards .card1{
+    position: absolute;
+    width: 370px;
+    height: 350px;
+    left: 0;
+    top: 0;
+    background-color: #FFFFFF;
+    box-shadow: 0 20px 50px rgba(79, 119, 255, 0.2);
+    border-radius: 20px;
+}
+.container .cards .card1 img{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 150px;
+    top: 35px;
+}
+.container .cards .card1 h2{
+    position: absolute;
+    width: 200px;
+    height: 25px;
+    left: 85px;
+    top: 115px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: -1px;
+    color: #2D3958;
+    margin: 0;
+}
+.container .cards .card1 h3{
+    position: absolute;
+    width: 104px;
+    height: 18px;
+    left: 133px;
+    top: 145px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #7B88A8;
+    opacity: 0.8;
+    margin: 0;
+}
+.container .cards .card1 span{
+    display: flex;
+    position: absolute;
+    width: 99.62px;
+    height: 14.46px;
+    left: 135px;
+    top: 183px;
+    gap: 6.1px;
+    justify-content: center;
+}
+.container .cards .card1 p{
+    position: absolute;
+    width: 300px;
+    height: 77px;
+    left: 35px;
+    top: 228px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -0.3px;
+    color: #7B88A8;
+    margin: 0;
+}
+.container .cards .card2{
+    position: absolute;
+    width: 370px;
+    height: 350px;
+    left: 400px;
+    top: 0px;
+    background: #FFFFFF;
+    box-shadow: 0px 20px 50px rgba(79, 119, 255, 0.2);
+    border-radius: 20px;
+}
+.container .cards .card2 img{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 150px;
+    top: 35px;
+}
+.container .cards .card2 h2{
+    position: absolute;
+    width: 200px;
+    height: 25px;
+    left: 85px;
+    top: 115px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: -1px;
+    color: #2D3958;
+    margin: 0;
+}
+.container .cards .card2 h3{
+    position: absolute;
+    width: 104px;
+    height: 18px;
+    left: 133px;
+    top: 145px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #7B88A8;
+    opacity: 0.8;
+    margin: 0;
+}
+.container .cards .card2 span{
+    display: flex;
+    position: absolute;
+    width: 99.62px;
+    height: 14.46px;
+    left: 135px;
+    top: 183px;
+    gap: 6.1px;
+    justify-content: center;
+}
+.container .cards .card2 p{
+    position: absolute;
+    width: 300px;
+    height: 77px;
+    left: 35px;
+    top: 228px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -0.3px;
+    color: #7B88A8;
+    margin: 0;
+}
+.container .cards .card3{
+    position: absolute;
+    width: 370px;
+    height: 350px;
+    left: 800px;
+    top: 0px;
+    background: #FFFFFF;
+    box-shadow: 0px 20px 50px rgba(79, 119, 255, 0.2);
+    border-radius: 20px;
+}
+.container .cards .card3 img{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 150px;
+    top: 35px;
+}
+.container .cards .card3 h2{
+    position: absolute;
+    width: 200px;
+    height: 25px;
+    left: 85px;
+    top: 115px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: -1px;
+    color: #2D3958;
+    margin: 0;
+}
+.container .cards .card3 h3{
+    position: absolute;
+    width: 104px;
+    height: 18px;
+    left: 133px;
+    top: 145px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #7B88A8;
+    opacity: 0.8;
+    margin: 0;
+}
+.container .cards .card3 span{
+    display: flex;
+    position: absolute;
+    width: 99.62px;
+    height: 14.46px;
+    left: 135px;
+    top: 183px;
+    gap: 6.1px;
+    justify-content: center;
+}
+.container .cards .card3 p{
+    position: absolute;
+    width: 300px;
+    height: 77px;
+    left: 35px;
+    top: 228px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -0.3px;
+    color: #7B88A8;
+    margin: 0;
+}
+#footer{
+    background-color: #292F3A;
+    position: absolute;
+    width: 1920px;
+    height: 546px;
+    top: 3930px;
+} 
+#footer .container2{
+    display: flex;
+    position: absolute;
+    width: 1170px;
+    height: 212px;
+    left: 375px;
+    gap: 30px;
+    top: 100px;
+    justify-content: center;
+}
+#footer .container2 .logo{
+    width: 176px;
+    height: 44px;
+}
+.container2 .logo img{
+    position: absolute;
+    width: 32px;
+    height: 44px;
+}
+.container2 .logo p{  
+    position: absolute;
+    height: 34px;
+    left: 40px;
+    top: 10px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.4px;
+    color: #FFFFFF;
+    margin: 0;
+}
+.container2 .Company{
+    width: 170px;
+    height: 212px;
+}
+.container2 .Company h2{
+    position: absolute;
+    width: 170px;
+    width: 170px;
+    height: 32px;
+    top: 10px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: -1px;
+    color: #FFFFFF;
+    margin: 0;
+}
+.container2 .Company ul{
+    position: absolute;
+    width: 170px;
+    height: 24px;
+    top: 52px;
+    padding: 0;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.3px;
+    text-transform: uppercase;
+    color: #E7E5EA;
+    margin: auto;
+}
+.container2 .Company ul li{
+    display: flex;
+    padding: 3px;
+}
+.container2 .Services{
+    width: 170px;
+    height: 212px;
+}
+.container2 .Services h2{
+    position: absolute;
+    width: 170px;
+    width: 170px;
+    height: 32px;
+    top: 10px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: -1px;
+    color: #FFFFFF;
+    margin: 0;
+}
+.container2 .Services ul{
+    position: absolute;
+    width: 170px;
+    height: 24px;
+    top: 52px;
+    padding: 0;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.3px;
+    text-transform: uppercase;
+    color: #E7E5EA;
+    margin: auto;
+}
+.container2 .Services ul li{
+    display: flex;
+    padding: 3px;
+}
+.container2 .Contact{
+    width: 170px;
+    height: 212px;
+}
+.container2 .Contact h2{
+    position: absolute;
+    width: 170px;
+    width: 170px;
+    height: 32px;
+    top: 10px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: -1px;
+    color: #FFFFFF;
+    margin: 0;
+}
+.container2 .Contact ul{
+    position: absolute;
+    width: 170px;
+    height: 24px;
+    top: 52px;
+    padding: 0;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.3px;
+    text-transform: uppercase;
+    color: #E7E5EA;
+    margin: auto;
+}
+.container2 .Contact ul li{
+    display: flex;
+    padding: 3px;
+}
+.container2 .Newsletter{
+    width: 370px;
+    height: 234px;
+}
+.container2 .Newsletter h2{
+    position: absolute;
+    width: 170px;
+    height: 32px;
+    top: 10px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: -1px;
+    color: #FFFFFF;
+    margin: 0;
+}
+.container2 .Newsletter .content{
+    position: absolute;
+    width: 370px;
+    height: 170px;
+    top: 52px;
+    padding: 0;
+    margin: auto;
+}
+.container2 .Newsletter .content p{
+    position: absolute;
+    width: 370px;
+    height: 52px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #E7E5EA;
+    margin: 0;
+}
+.container2 .Newsletter .content .item{
+    display: flex;
+    position: absolute;
+    width: 370px;
+    height: 48px;
+    top: 70px;
+}
+.container2 .Newsletter .content .item input{
+    position: absolute;
+    width: 235px;
+    height: 48px;
+    background: #E7E5EA;
+    border-radius: 5px;
+    padding-left: 2rem;
+    padding-left: 20px;
+}
+.container2 .Newsletter .content .item .value{
+    position: absolute;
+    width: 97.67px;
+    height: 26px;
+    left: 1193.38px;
+    top: 4231px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #7B88A8;
+    opacity: 0.7;
+}
+.container2 .Newsletter .content .item .submit{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    width: 129px;
+    height: 48px;
+    left: 241px;
+    background: #4F77FF;
+    border-radius: 5px;
+}
+.container2 .Newsletter .content .item .submit button{
+    display: contents;
+    width: 50px;
+    height: 24px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -0.3px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.container2 .Newsletter .content span{
+    position: absolute;
+    width: 370px;
+    height: 42px;
+    top: 135px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.3px;
+    color: #E7E5EA;
+}
+.copyright{
+    width: 1170px;
+    height: 80px;
+    display: flex;
+    position: absolute;
+    top: 439px;
+    left: 375px;
+    gap: 304px;
+}
+.copyright span{
+    position: absolute;
+    width: 1170px;
+    height: 1px;
+    top: 0;
+    background: #7B88A8;
+    opacity: 0.3;
+}
+.copyright  p{
+    position: absolute;
+    width: 670px;
+    height: 26px;
+    top: 40px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #E7E5EA;
+    margin: 0;
+}
+.copyright .icons{
+    position: absolute;
+    width: 196px;
+    height: 52px;
+    left: 974px;
+    top: 27px;
+    display: flex;
+    gap: 20px;
+}
+
